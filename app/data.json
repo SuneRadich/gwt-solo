@@ -1,11 +1,99 @@
 {
     "cards": [{
             "id": 1,
-            "text": "This is the text"
+            "text": "Move Forward 1",
+            "text2": "Move Train up to 3 spaces forward",
+            "text3": "If Brisco’s train is ahead of your train when reaching a station, stop, place a disk in the station, and gain the tile if possible"
         },
         {
             "id": 2,
-            "text": "Another card text"
+            "text": "Move Forward 1",
+            "text2": "Move Train up to 3 spaces forward",
+            "text3": "If Brisco’s train is ahead of your train when reaching a station, stop, place a disk in the station, and gain the tile if possible"
+        },
+        {
+            "id": 3,
+            "text": "Move Forward 1",
+            "text2": "Take the 'least' expensive worker",
+            "text3": "If there are multiple to choose from, choose the top, left least expensive worker"
+        },
+        {
+            "id": 4,
+            "text": "Move Forward 1",
+            "text2": "Take a cattle card worth the 'highest' amount of victory points",
+            "text3": null
+        },
+        {
+            "id": 5,
+            "text": "Move Forward 1",
+            "text2": "Take a cattle card worth the 'least' amount of victory points",
+            "text3": null
+        },
+        {
+            "id": 6,
+            "text": "Move Forward 1",
+            "text2": "Take the 'least' expensive worker",
+            "text3": "If there are multiple to choose from, choose the top, left least expensive worker"
+        },
+        {
+            "id": 7,
+            "text": "Move Forward 1",
+            "text2": "Take the teepee tile with the 'highest' dollar value",
+            "text3": null
+        },
+        {
+            "id": 8,
+            "text": "Move Forward 1",
+            "text2": "Take a hazard tile worth the 'highest' amount of victory points",
+            "text3": null
+        },
+        {
+            "id": 9,
+            "text": "Move Forward 1",
+            "text2": "Draw a random building from the Brisco’s bag of buildings and place it on 'Side A' in the next space in front of you on the trail",
+            "text3": null
+        },
+        {
+            "id": 10,
+            "text": "Move Forward based on current speed",
+            "text2": "3, 4, or 5 spaces",
+            "text3": null
+        },
+        {
+            "id": 11,
+            "text": "Move Forward based on current speed",
+            "text2": "3, 4, or 5 spaces",
+            "text3": null
+        },
+        {
+            "id": 12,
+            "text": "Move Forward 1",
+            "text2": "Take an Objective Card that is worth the 'highest' amount of victory points",
+            "text3": null
+        },
+        {
+            "id": 13,
+            "text": "Move Forward 1",
+            "text2": null,
+            "text3": null
+        },
+        {
+            "id": 14,
+            "text": "Move Forward 1",
+            "text2": null,
+            "text3": null
+        },
+        {
+            "id": 15,
+            "text": "Move Forward 1",
+            "text2": null,
+            "text3": null
+        },
+        {
+            "id": 16,
+            "text": "Move Forward 1",
+            "text2": null,
+            "text3": null
         }
     ]
 }
