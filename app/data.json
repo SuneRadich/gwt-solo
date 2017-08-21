@@ -56,14 +56,14 @@
         {
             "id": 10,
             "text": "Move Forward based on current speed",
-            "text2": "3, 4, or 5 spaces",
-            "text3": null
+            "text2": null,
+            "text3": "3, 4, or 5 spaces"
         },
         {
             "id": 11,
             "text": "Move Forward based on current speed",
-            "text2": "3, 4, or 5 spaces",
-            "text3": null
+            "text2": null,
+            "text3": "3, 4, or 5 spaces"
         },
         {
             "id": 12,
