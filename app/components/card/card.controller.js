@@ -4,11 +4,6 @@ class cardController {
 
         'ngInject';
 
-        dataService.getData().then((data) => {
-            console.log('dat', data);
-            this.data = data;
-        });
-
     }
 
 }

@@ -1,39 +1,64 @@
 .card {
     border-radius: 6px;
-    border-color: $black;
+    border: 1px solid $black;
     padding: 6px;
-    min-height: 400px;
+    min-height: 440px;
     max-width: 300px;
-    text-align: center;
+    margin-bottom: 10px;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
 
     &__header {
-        flex: 0 1 50px;
+        flex: 0 1 20px;
         align-self: flex-start;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
+        font-size: rem-calc(13);
     }
 
     &__text {
-        flex: 1;
+        flex: 1 1 100%;
         align-items: center;
         justify-content: center;
         display: flex;
-        font-size: rem-calc(30);
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__action {
+        text-transform: uppercase;
+        font-size: rem-calc(20);
+
+
+        &:before {
+            content: '&';
+            display: block;
+            margin: 10px 0;
+            opacity: 0.4;
+            font-size: rem-calc(24);
+        }
+
+        &:first-of-type {
+            &:before {
+                display: none;
+            }
+        }
+
+
+    }
+
+    &__extra {
+        flex: 0 1 auto;
+        font-size: rem-calc(12);
+        text-transform: none;
+        margin-top: 10px;
     }
 
     &__footer {
-        font-size: rem-calc(10);
-        flex: 0 1 30px;
         align-self: flex-end;
-        width: 100%;
-        align-items: center;
-        justify-content: flex-end;
-        display: flex;
-        padding: 0 10px;
     }
 }

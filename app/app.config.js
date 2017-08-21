@@ -12,9 +12,9 @@ function config($stateProvider, $urlRouterProvider) {
             component: 'game'
         })
 
-        .state('app.draw', {
-            url: '',
-            component: 'card'
+        .state('app.cardlist', {
+            url: '/list',
+            component: 'cardList'
         })
 }
 

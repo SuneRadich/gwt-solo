@@ -5,6 +5,9 @@ import './card.scss';
 const cardComponent = {
 
     template: cardTemplate,
+    bindings: {
+        data: '<'
+    },
     controller: cardController
 
 };
