@@ -5,6 +5,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const WebpackShellPlugin = require('webpack-shell-plugin');
 
 //Setup default config object
 const config = {
@@ -153,7 +154,13 @@ const config = {
                     name: '[name].[ext]',
                     outputPath: '/fonts/'
                 }
+            },
+
+            {
+                test: /\.html/,
+                loader: 'raw-loader'
             }
+
         ]
     },
 
@@ -168,7 +175,15 @@ const config = {
      * Stats
      * Reference: https://webpack.js.org/configuration/stats/
      */
-    stats: 'errors-only'
+    stats: 'errors-only',
+
+    plugins: [
+        new WebpackShellPlugin({
+            onBuildStart:['node ./scripts/generateComponents.js'],
+            //onBuildEnd:['node -v']
+        }),
+    ]
+
 
 };
 

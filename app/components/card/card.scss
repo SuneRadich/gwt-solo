@@ -1,0 +1,39 @@
+.card {
+    border-radius: 6px;
+    border-color: $black;
+    padding: 6px;
+    min-height: 400px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    &__header {
+        flex: 0 1 50px;
+        align-self: flex-start;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: rem-calc(30);
+    }
+
+    &__footer {
+        font-size: rem-calc(10);
+        flex: 0 1 30px;
+        align-self: flex-end;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        padding: 0 10px;
+    }
+}

@@ -1,5 +1,6 @@
 import modernizr from 'modernizr';
 import angular from 'angular';
+import uiRouter from '@uirouter/angularjs';
 import $ from 'jquery';
 
 import 'vendor/foundation/foundation.scss';
@@ -9,14 +10,19 @@ import "vendor/foundation/foundation";
 
 import './app.scss';
 
+import components from './components/components';
 import controller from './app.controller';
-import { Calc } from './services/calculate.service';
+import appConfig from './app.config';
 
-var app = angular.module('app', []);
+import dataService from './services/data.service';
+
+var app = angular.module('app', ['ui.router', 'components']);
 
 app
+    .config(appConfig)
+    .service('dataService', dataService)
 	.controller('appController', controller)
-	.factory('Calculator', Calc);
+
 
 
 angular.bootstrap(document, ['app']);

@@ -1,0 +1,11 @@
+{
+    "cards": [{
+            "id": 1,
+            "text": "This is the text"
+        },
+        {
+            "id": 2,
+            "text": "Another card text"
+        }
+    ]
+}
