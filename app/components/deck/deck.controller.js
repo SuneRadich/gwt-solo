@@ -30,7 +30,8 @@ class deckController {
         this.deck = {};
         this.dataService.getData().then((data) => {
             this.deck = data.cards;
-            this.draw()
+            this.discard = [];
+            this.cardData = null;
         });
     }
 
