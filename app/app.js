@@ -14,16 +14,17 @@ import components from './components/components';
 import controller from './app.controller';
 import appConfig from './app.config';
 
+//Services
 import dataService from './services/data.service';
+import helperService from './services/helper.service';
 
 var app = angular.module('app', ['ui.router', 'components']);
 
 app
     .config(appConfig)
     .service('dataService', dataService)
+    .service('helperService', helperService)
 	.controller('appController', controller)
-
-
 
 angular.bootstrap(document, ['app']);
 
