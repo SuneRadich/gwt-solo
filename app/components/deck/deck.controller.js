@@ -19,7 +19,10 @@ class deckController {
     */
     draw() {
         let card = this.deck.pop();
-        this.discard.push(card);
+        if (this.cardData) {
+            this.discard.push(this.cardData);
+        }
+
         this.cardData = card;
     }
 
