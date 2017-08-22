@@ -6,7 +6,8 @@ const cardComponent = {
 
     template: cardTemplate,
     bindings: {
-        data: '<'
+        data: '<',
+        type: '<'
     },
     controller: cardController
 
