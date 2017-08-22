@@ -1,20 +1,21 @@
 .card {
-    border-radius: 6px;
-    border: 1px solid $black;
-    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid darken($brown, 20%);
+    background-color: $brown;
+    padding: 12px;
     min-height: 440px;
     max-width: 300px;
     height: 100%;
     margin-bottom: 10px;
     flex-direction: column;
     display: flex;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.75);
 
     &__header {
-        flex: 0 1 20px;
+        flex: 0 1 26px;
         align-self: flex-start;
         width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
         text-transform: uppercase;
         font-size: rem-calc(13);
@@ -28,12 +29,15 @@
         flex-direction: column;
         padding: 20px;
         text-align: center;
+        background-color: $white;
+        border-radius: 10px;
+        border: 1px solid $black;
     }
 
     &__action {
         text-transform: uppercase;
         font-size: rem-calc(20);
-
+        background-color: $white;
 
         &:before {
             content: '&';
@@ -60,7 +64,14 @@
     }
 
     &__footer {
+        flex: 0 1 26px;
         align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem-calc(10);
+        padding-top: 8px;
+        color: $white;
     }
 }
 
