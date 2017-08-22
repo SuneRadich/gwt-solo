@@ -21,6 +21,11 @@ function config($stateProvider, $urlRouterProvider) {
             url: '/deck',
             component: 'deck'
         })
+
+        .state('app.faq', {
+            url: '/faq',
+            component: 'faq'
+        });
 }
 
 export default config;
