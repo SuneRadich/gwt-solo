@@ -3,7 +3,8 @@ class discardController {
     constructor() {
 
         'ngInject';
-        console.log(this.discard);
+
+
     }
 
 }
