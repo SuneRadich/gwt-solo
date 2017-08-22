@@ -1,0 +1,13 @@
+<div>
+    <a class="button" ng-click="$ctrl.draw()">Draw!</a>
+
+    <div ng-if="$ctrl.cardData">
+
+
+        <p>
+            Remaining in deck {{$ctrl.deck.length - 1}}
+        </p>
+
+        <card ng-if="$ctrl.cardData" data="$ctrl.cardData"></card>
+    </div>
+</div>

@@ -16,6 +16,11 @@ function config($stateProvider, $urlRouterProvider) {
             url: '/list',
             component: 'cardList'
         })
+
+        .state('app.deck', {
+            url: '/deck',
+            component: 'deck'
+        })
 }
 
 export default config;
