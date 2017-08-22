@@ -10,9 +10,11 @@ class DataService {
 
     }
 
+    /**
+    * Return a fresh data set
+    */
     getData() {
-
-        return this.$q.resolve(data);
+        return this.$q.resolve(angular.copy(data));
     }
 
 }
