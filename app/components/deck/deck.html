@@ -1,13 +1,19 @@
 <div>
-    <a class="button" ng-click="$ctrl.draw()">Draw!</a>
+    <button type="button" class="button" ng-click="$ctrl.draw()">Draw!</button>
+    <button type="button" class="button" ng-click="$ctrl.shuffle()">Shuffle deck</button>
 
     <div ng-if="$ctrl.cardData">
 
 
         <p>
-            Remaining in deck {{$ctrl.deck.length - 1}}
+            Remaining in deck {{$ctrl.deck.length }}
         </p>
 
-        <card ng-if="$ctrl.cardData" data="$ctrl.cardData"></card>
+        <card type="'card'" ng-if="$ctrl.cardData" data="$ctrl.cardData"></card>
     </div>
+
+    <section>
+        <discard data="$ctrl.discard"></discard>
+    </section>
+
 </div>

@@ -1,29 +1,37 @@
 class deckController {
 
-    constructor(dataService, $scope) {
+    constructor(dataService, helperService) {
 
         'ngInject';
 
+        this.dataService = dataService;
+
         dataService.getData().then((data) => {
-            this.deck = data.cards;
+            this.deck = helperService.shuffleArray(data.cards);
         });
+
+        this.discard = [];
 
     }
 
+    /**
+    * Draw a card from the current deck
+    */
     draw() {
-
-        this.deck = this.deck.filter((card) => {
-            return card.used == undefined || card.used !== true;
-        });
-
-        if (this.deck.length === 0) {
-            this.cardData = null;
-            return;
-        }
-
-        let card = this.deck[Math.floor(Math.random() * this.deck.length)];
-        card.used = true;
+        let card = this.deck.pop();
+        this.discard.push(card);
         this.cardData = card;
+    }
+
+    /**
+    * Shuffle the deck, making all cards available again
+    */
+    shuffle() {
+        this.deck = {};
+        this.dataService.getData().then((data) => {
+            this.deck = data.cards;
+            this.draw()
+        });
     }
 
 
