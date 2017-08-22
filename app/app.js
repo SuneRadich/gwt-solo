@@ -1,5 +1,6 @@
 import modernizr from 'modernizr';
 import angular from 'angular';
+import 'angular-animate';
 import uiRouter from '@uirouter/angularjs';
 import $ from 'jquery';
 
@@ -18,7 +19,7 @@ import appConfig from './app.config';
 import dataService from './services/data.service';
 import helperService from './services/helper.service';
 
-var app = angular.module('app', ['ui.router', 'components']);
+var app = angular.module('app', ['ui.router', 'components', 'ngAnimate']);
 
 app
     .config(appConfig)
