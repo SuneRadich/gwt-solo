@@ -18,7 +18,7 @@ function config($stateProvider, $urlRouterProvider) {
         })
 
         .state('app.deck', {
-            url: '/deck',
+            url: '/deck/{difficulty:hard|standard|easy}',
             component: 'deck'
         })
 

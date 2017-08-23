@@ -1,13 +1,15 @@
 class deckController {
 
-    constructor(dataService, helperService) {
+    constructor(dataService, helperService, $stateParams) {
 
         'ngInject';
 
         this.dataService = dataService;
 
-        dataService.getData().then((data) => {
-            this.deck = helperService.shuffleArray(data.cards);
+        this.difficulty = $stateParams.difficulty;
+
+        dataService.getData($stateParams.difficulty).then((data) => {
+            this.deck = helperService.shuffleArray(data);
         });
 
         this.discard = [];
@@ -31,8 +33,8 @@ class deckController {
     */
     shuffle() {
         this.deck = {};
-        this.dataService.getData().then((data) => {
-            this.deck = data.cards;
+        this.dataService.getData(this.difficulty).then((data) => {
+            this.deck = data;
             this.discard = [];
             this.cardData = null;
         });
